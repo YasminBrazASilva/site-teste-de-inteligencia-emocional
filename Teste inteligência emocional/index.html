@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Inteligência Emocional</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+</head>
+<body>
+    <header>
+        <img src="./src/imagens/logo.jpg" class="cabecalho" alt="Cabeçalho">
+    </header>
+    <main>
+        <h1>TESTE DE INTELIGÊNCIA EMOCIONAL</h1>
+        <div class="grupoIntroducao" id="grupoIntroducao">
+            <p>Convidamos você a responder este questionário. Todas as respostas são válidas e dependerá simplesmente do grau em que você as classifica.</p>
+            <p>Ele não mede o coeficiente de IE – Inteligência Emocional e sim mostra e detecta alguns aspectos de sua vida que necessita melhorar. Ele se concentra especialmente na detecção de fragilidades que podem contribuir como guia para o autoconhecimento.</p>
+            <p>Este teste ajuda você a conhecer seus pontos fortes e quais são as áreas nas quais você se movimenta melhor. Lembre-se que isso é para ajudá-lo a crescer como pessoa e se desenvolver/aprimorar emocionalmente.</p>
+            <p>LEMBRETE: Isso não lhe dará dados matemáticos e científicos sobre você. Isto não é Engenharia Emocional – é um teste para detectar pontos fortes e fracos. É um termômetro que diz em que ponto você está.</p>
+            <p>Neste questionário você encontrará várias frases que se referem a sua maneira de ser e agir. Leia cada frase atentamente e assinale colocando o número correspondente à alternativa que melhor se aplique a você.</p>
+        </div>
+
+
+        <section class="oculto grupoDetalheUsuario" id="grupoDetalheUsuario">
+            <label for="nomeCompleto">Nome completo:</label>
+            <input type="text" id="nomeCompleto" name="nomeCompleto" required><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="Empresa">Empresa:</label>
+            <select id="empresa" name="empresa">
+                <option value="">Selecione uma empresa</option>
+                <option value="Automec">Automec</option>
+                <option value="Outras">Outras</option>
+            </select>
+
+            <button id="ok">OK</button>
+        </section>
+
+
+        <section class="oculto grupoProgresso" id="grupoProgresso">
+            <progress id="barraProgresso" max="100" value="0"></progress>
+            <div id="progressoDetalhe">0%</div>
+        </section>
+
+
+        <section class="grupoBotoes">
+            <button id="botaoComecar">Começar</button>
+
+            <div id="grupoPerguntas" class="oculto grupoPerguntas">
+                <p class="afirmacao" id="afirmacao"></p>
+                <div class="grupoOpcoes">
+                    <span>Praticamente nunca</span>
+                    <div class="circulo" id="circulo1"></div>
+                    <div class="circulo" id="circulo2"></div>
+                    <div class="circulo" id="circulo3"></div>
+                    <div class="circulo" id="circulo4"></div>
+                    <div class="circulo" id="circulo5"></div>
+                    <span>Praticamente sempre</span>
+                </div>
+            </div>
+
+            <button id="botaoProxima" class="oculto">Próxima</button>
+        </section>
+
+
+        <section class="oculto grupoResultado" id="grupoResultado">
+            <div class="grupoCompetencia" id="autoconsciencia">
+                <p>Autoconsciência</p>
+                <div id="detalheResultadoAutoconsciencia">0 pontos</div>
+                <progress id="barraResultadoAutoconsciencia" max="25" value="0"></progress>
+            </div>
+            <div class="grupoCompetencia" id="empatia">
+                <p>Empatia</p>
+                <div id="detalheResultadoEmpatia">0 pontos</div>
+                <progress id="barraResultadoEmpatia" max="25" value="0"></progress>
+            </div>
+            <div class="grupoCompetencia" id="autoconfianca">
+                <p>Autoconfiança</p>
+                <div id="detalheResultadoAutoconfianca">0 pontos</div>
+                <progress id="barraResultadoAutoconfianca" max="25" value="0"></progress>
+            </div>
+            <div class="grupoCompetencia" id="motivacao">
+                <p>Motivação</p>
+                <div id="detalheResultadoMotivacao">0 pontos</div>
+                <progress id="barraResultadoMotivacao" max="25" value="0"></progress>
+            </div>
+            <div class="grupoCompetencia" id="autocontrole">
+                <p>Autocontrole</p>
+                <div id="detalheResultadoAutocontrole">0 pontos</div>
+                <progress id="barraResultadoAutocontrole" max="25" value="0"></progress>
+            </div>
+            <div class="grupoCompetencia" id="competenciaSocial">
+                <p>Competência social</p>
+                <div id="detalheResultadoCompetenciaSocial">0 pontos</div>
+                <progress id="barraResultadoCompetenciaSocial" max="25" value="0"></progress>
+            </div>
+            <div class="grupoDetalhamentoResultado">
+                <h3>RESULTADOS</h3>
+                <p><strong>Entre 20 e 25 pontos</strong> – Podemos considerar que você é uma pessoa que consegue ter sua vida de forma controlada e que contribui para que seja de uma maneira saudável e ideal.</p>
+                <p><strong>Entre 11 e 19 pontos</strong> – Podemos considerar que você deve observar que aspectos em cada fator podem ser melhorados e buscar identificar e realizar mudanças que irão contribuir para ter uma vida com maior equilíbrio emocional.</p>
+                <p><strong>Entre 5 e 10 pontos</strong> – Tende a ter uma IE insatisfatória no que se refere a determinados fatores e para tanto você deve prestar atenção imediatamente, pois ficam evidenciadas suas maiores fraquezas e, portanto, são as que geram mais transtornos em sua vida pessoal e profissional.</p>
+                <p><strong>IMPORTANTE:</strong> Toda resposta que você classificou abaixo de 3 deve considerar como um ponto de melhoria a ser desenvolvido e para tanto, transforme em metas específicas, pois ajudarão você a crescer e melhorar cada fator da sua Inteligência Emocional.</p>
+            </div>
+        </section>
+
+
+        <button type="submit" id="botaoEnviar" class="oculto">ENVIAR</button>   
+
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
