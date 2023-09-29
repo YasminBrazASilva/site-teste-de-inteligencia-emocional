@@ -1,6 +1,48 @@
-@media (max-width: 1120px){
+@media (max-width: 1000px){
     .cabecalho {
         max-width: 90%;
+        height: auto;
     }
-}
 
+    h1 {
+        font-size: 24px; 
+    }
+
+    .grupoPerguntas p {
+        width: 90%; 
+        margin-bottom: 70px;
+    }
+
+    .grupoOpcoes span {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 12px;
+    }
+
+    .circulo {
+        width: 18px;  
+        height: 18px;
+    }
+    
+    .grupoCompetencia {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grupoCompetencia p {
+        width: auto; 
+        margin: 3px 0;
+    }
+
+    .grupoCompetencia div {
+        width: 100%;
+        text-align: center;
+        margin: 3px 0;
+    }
+
+    .grupoCompetencia progress {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
